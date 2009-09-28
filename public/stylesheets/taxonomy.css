@@ -1,0 +1,71 @@
+
+body {font-family: Verdana;font-size:0.8em;}
+
+p.flash {color: green;}
+p.spacer {padding:10 0 20 0;}
+
+div.instructions {width:95%;color:#333333;background-color:#c6c6c6;padding:5 10 10 10;margin:0 0 20 0;}
+div.instructions tr {vertical-align:top;}
+div.instructions td {padding:0 10 0 20;}
+div.instructions p.title {font-weight:bold;}
+
+table.taxonomy td {vertical-align:top; border:0;}
+table.taxonomy {width:100%;}
+
+p.tree {margin:0;padding:0 0 10 0;}
+div.tree{margin:0;padding:0.5em 0.2em 0.5em 0.2em;border: 1pt solid black;}
+table.tree {padding:10 30 30 10;border-collapse: collapse;}
+table.tree td {font-size:0.8em; font-family: Verdana;line-height:0.9em;}
+
+p.unsorted {margin:0 0 0 40;padding:0 0 10 0;}
+div.unsorted {margin:0 0 0 40;padding:0;}
+table.unsorted td {font-size:0.8em; font-family: Verdana; border-collapse: collapse;margin:0;padding:0 10 0 10;}
+table.unsorted tr.labelCategory div.levelNone {cursor:pointer; border: 1px solid black; padding:0 10 0 5;}
+
+form {display:inline;}
+
+input.remove {padding:2 0 0 0;height:0.9em;}
+input.add {padding:2 0 0 0;height:0.9em;}
+
+div.level0 {cursor:pointer;}
+div.level1 {cursor:pointer;}
+div.level2 {cursor:pointer;}
+
+div.level-99, div.level-99Input {margin:10 5 1 5;}
+div.level0, div.level0Input {margin:1 5 1 5;}
+div.level1, div.level1Input {margin:1 5 1 20;}
+div.level2, div.level2Input {margin:1 5 1 35;}
+div.level3, div.level3Input {margin:1 5 1 50;}
+
+div.category-active-99 { color: #99aadd; border: 2pt double #6677ff; }
+div.category-active0 { color: #99ff66; border: 2pt solid #99ff66; }
+div.category-active1 { color: #eebb22; border: 1pt dashed #eebb22; }
+div.category-active2 { color: #DC143C; border: 1pt dotted #DC143C; }
+
+
+input.empty {color:#999999;}
+input.category {line-height:0.9em;border:1px solid #000000; margin:0.3em 0 0.3em 0;}
+
+li.no-list {list-style-type: none;}
+
+
+#`````````````````
+# TAXONOMY TREE
+#`````````````````
+
+div.category-entry {margin: 0 0.2em 0 0.2em; background-color:red;}
+div.category-entry span {font-size:0.8em; font-family: Verdana; line-height:1.1em;}
+
+span.level-99 {cursor:pointer;margin: 0 0 0 0.2em;}
+span.level0 {cursor:pointer;margin: 0 0 0 0.2em;}
+span.level1 {cursor:pointer;margin: 0 0 0 1.7em;}
+span.level2 {cursor:pointer;margin: 0 0 0 3.2em;}
+span.level3 {cursor:pointer;margin: 0 0 0 4.7em;}
+
+span.level-98_input {margin: 0 0 0 0.2em;}
+span.level0_input {margin: 0 0 0 0.2em;}
+span.level1_input {margin: 0 0 0 1.7em;}
+span.level2_input {margin: 0 0 0 3.2em;}
+span.level3_input {margin: 0 0 0 4.7em;}
+
+

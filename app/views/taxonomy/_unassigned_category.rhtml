@@ -1,0 +1,12 @@
+<tr id="unassigned_category_<%= @category.id %>" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_<%= @category.id %>" class="levelNone">
+    <% form_remote_tag(:url => { :action => :remove_category, :id => @category.id  },
+                        :html => { :id => "removecategory#{@category.id}-form" } ) do -%>
+    <%= @category.name %>
+    <%= image_submit_tag '/images/remove.gif', {:class => 'remove'} %>
+    </div>
+    <% end -%> 
+    <%= draggable_element "div_unassigned_category_#{@category.id}", :revert => false %>
+  </td>
+</tr>

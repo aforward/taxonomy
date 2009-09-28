@@ -1,0 +1,20 @@
+
+<h1>Software Application Taxonomy</h1>
+
+
+<div class="highlight">
+<p>
+Welcome back.  Please <b>check your email (<%= @user.email%>)</b> for a 
+secret <b>password</b> to regain entry to your software taxonomy.  
+If the above email account is not valid, then please contact 
+aforward@gmail.com to reset your password.
+</p>
+</div>
+
+<p class="flash"><%= flash[:notice] %></p>
+
+<% form_tag :action => 'verify' do %>
+  <p><label for="user_password">Enter your secret password (check your email), then click "Begin"</label></p>
+  <p><%= password_field 'user', 'password'  %></p>
+  <p><%= submit_tag "Begin" %></p>
+<% end %>

@@ -1,0 +1,3 @@
+page.insert_html :before, @insert_before_row_id, :partial => 'category', :locals => { :category => @category, :read_only => false }
+page.visual_effect :highlight, "category_#{@category.id}", :duration => 4 
+page.form.reset "newcategory#{@category.parent_id}-form"

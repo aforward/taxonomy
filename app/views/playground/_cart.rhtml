@@ -1,0 +1,13 @@
+<% session[:cart].each do |product| %>
+<div>
+    <%= image_tag "/images/1.gif", 
+          :class => "cart-items", 
+          :id => "item_#{product}", 
+          :style => "position:relative;" %>
+    <%= draggable_element "item_#{product}", :revert => true %>
+  <span class="title">
+    <%= Category.find_by_id(product).name %>
+  </span>
+</div>
+<% end %>
+<%= "Here's your shopping cart." if session[:cart].empty? %>

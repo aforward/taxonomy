@@ -1,0 +1,1548 @@
+<style>
+
+</style>
+
+<table class="taxonomy">
+<tr><td>
+  <p class="tree">Your taxonomy so far</p>
+  <div class="tree">
+  <table id="taxonomy" class="tree">
+    
+      <tr id="displaycategory1">
+  <td>
+
+    <div id="category_1" class="level0">+ Desktop productivity</div>
+      <script type="text/javascript">
+//<![CDATA[
+Droppables.add("category_1", {accept:'levelNone', hoverclass:'category-active0', onDrop:function(element){newcategory; new Ajax.Request('/taxonomy/assign_category?parent_id=1', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
+//]]>
+</script>  
+  </td>
+</tr>
+
+
+
+  <tr id="displaycategory2">
+  <td>
+    <div id="category_2" class="level1">+ Development tools</div>
+
+      <script type="text/javascript">
+//<![CDATA[
+Droppables.add("category_2", {accept:'levelNone', hoverclass:'category-active1', onDrop:function(element){newcategory1; new Ajax.Request('/taxonomy/assign_category?parent_id=2', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
+//]]>
+</script>  
+  </td>
+</tr>
+
+  
+  
+    <tr id="displaycategory85">
+  <td>
+    <div id="category_85" class="level2">+ whatup</div>
+        
+  </td>
+</tr>
+
+  
+    <tr id="displaycategory3">
+  <td>
+    <div id="category_3" class="level2">+ Educational</div>
+        
+  </td>
+</tr>
+
+  
+    <tr id="displaycategory86">
+  <td>
+    <div id="category_86" class="level2">+ what do you need?</div>
+
+        
+  </td>
+</tr>
+
+    
+  
+<tr id="newcategory2" >
+  <td>
+    <form action="/taxonomy/create_category?parent_id=2" id="newcategory2-form" method="post" onsubmit="new Ajax.Request('/taxonomy/create_category?parent_id=2', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    <div class="level2Input">+ <input id="personal_category_name" name="personal_category[name]" size="30" type="text" />
+    <input name="commit" type="submit" value="Add" />
+    </div>
+
+    </form> 
+  </td>
+</tr>
+      
+
+  <tr id="displaycategory87">
+  <td>
+    <div id="category_87" class="level1">+ more</div>
+      <script type="text/javascript">
+//<![CDATA[
+Droppables.add("category_87", {accept:'levelNone', hoverclass:'category-active1', onDrop:function(element){newcategory1; new Ajax.Request('/taxonomy/assign_category?parent_id=87', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
+//]]>
+</script>  
+  </td>
+</tr>
+
+  
+  
+    <tr id="displaycategory8">
+  <td>
+    <div id="category_8" class="level2">+ Misc</div>
+        
+  </td>
+</tr>
+
+    
+  
+<tr id="newcategory87" >
+  <td>
+    <form action="/taxonomy/create_category?parent_id=87" id="newcategory87-form" method="post" onsubmit="new Ajax.Request('/taxonomy/create_category?parent_id=87', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    <div class="level2Input">+ <input id="personal_category_name" name="personal_category[name]" size="30" type="text" />
+    <input name="commit" type="submit" value="Add" />
+    </div>
+    </form> 
+  </td>
+</tr>
+      
+
+
+<tr id="newcategory1" >
+  <td>
+    <form action="/taxonomy/create_category?parent_id=1" id="newcategory1-form" method="post" onsubmit="new Ajax.Request('/taxonomy/create_category?parent_id=1', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    <div class="level1Input">+ <input id="personal_category_name" name="personal_category[name]" size="30" type="text" />
+    <input name="commit" type="submit" value="Add" />
+    </div>
+    </form> 
+  </td>
+</tr>
+
+
+    
+    <tr id="displaycategory">
+  <td>
+
+    <div id="category_" class="level-99">+ << drop new category >></div>
+      <script type="text/javascript">
+//<![CDATA[
+Droppables.add("category_", {accept:'levelNone', hoverclass:'category-active-99', onDrop:function(element){newcategory; new Ajax.Request('/taxonomy/assign_category', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
+//]]>
+</script>  
+  </td>
+</tr>
+
+    
+<tr id="newcategory" >
+  <td>
+    <form action="/taxonomy/create_category" id="newcategory-form" method="post" onsubmit="new Ajax.Request('/taxonomy/create_category', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    <div class="level0Input">+ <input id="personal_category_name" name="personal_category[name]" size="30" type="text" />
+    <input name="commit" type="submit" value="Add" />
+    </div>
+    </form> 
+  </td>
+</tr>
+      
+    <script type="text/javascript">
+//<![CDATA[
+Droppables.add("category_", {accept:'levelNone', hoverclass:'category-active', onDrop:function(element){newcategory; new Ajax.Request('/taxonomy/assign_category', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
+//]]>
+</script>  
+  </table>
+  </div>
+
+</td>
+
+<td>
+  <p class="unsorted">Drag and Drop Categories</p>
+  <div class="unsorted">
+  <table id="unassigned_categories" class="unsorted">
+    <tr id="newunassignedcategory">
+  <td>
+    <form action="/taxonomy/create_unassigned_category" id="unassignedcategory-form" method="post" onsubmit="new Ajax.Request('/taxonomy/create_unassigned_category', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    <div class="levelNone"><input id="personal_category_name" name="personal_category[name]" size="30" type="text" />
+
+    <input name="commit" type="submit" value="Add" />
+    </div>
+    </form> 
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_4" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_4" class="levelNone">
+    <form action="/taxonomy/remove_category/4" id="removecategory4-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/4', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Entertainment <input src="/images/remove.gif?1165522758" type="image" class="remove" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_4", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_5" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_5" class="levelNone">
+    <form action="/taxonomy/remove_category/5" id="removecategory5-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/5', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Information resources
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_5", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_6" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_6" class="levelNone">
+
+    <form action="/taxonomy/remove_category/6" id="removecategory6-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/6', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Management and Business
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_6", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_7" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_7" class="levelNone">
+    <form action="/taxonomy/remove_category/7" id="removecategory7-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/7', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Math / Stats / Data analysis
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_7", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_9" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_9" class="levelNone">
+    <form action="/taxonomy/remove_category/9" id="removecategory9-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/9', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Multimedia / publishing
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_9", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_10" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_10" class="levelNone">
+    <form action="/taxonomy/remove_category/10" id="removecategory10-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/10', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Networking / Telecom
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_10", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_11" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_11" class="levelNone">
+    <form action="/taxonomy/remove_category/11" id="removecategory11-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/11', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Operating Systems & Hardware support
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_11", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_12" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_12" class="levelNone">
+    <form action="/taxonomy/remove_category/12" id="removecategory12-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/12', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Web / Internet
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_12", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_13" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_13" class="levelNone">
+    <form action="/taxonomy/remove_category/13" id="removecategory13-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/13', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Acrobat/PDF Utilities
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_13", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_14" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_14" class="levelNone">
+
+    <form action="/taxonomy/remove_category/14" id="removecategory14-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/14', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Browsers
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_14", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_15" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_15" class="levelNone">
+    <form action="/taxonomy/remove_category/15" id="removecategory15-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/15', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Communication and E-mail software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_15", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_16" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_16" class="levelNone">
+    <form action="/taxonomy/remove_category/16" id="removecategory16-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/16', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Contact/Content Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_16", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_17" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_17" class="levelNone">
+    <form action="/taxonomy/remove_category/17" id="removecategory17-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/17', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Spreadsheet Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_17", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_18" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_18" class="levelNone">
+    <form action="/taxonomy/remove_category/18" id="removecategory18-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/18', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Time Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_18", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_19" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_19" class="levelNone">
+    <form action="/taxonomy/remove_category/19" id="removecategory19-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/19', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Word Processing
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_19", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_20" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_20" class="levelNone">
+    <form action="/taxonomy/remove_category/20" id="removecategory20-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/20', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Database
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_20", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_21" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_21" class="levelNone">
+
+    <form action="/taxonomy/remove_category/21" id="removecategory21-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/21', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Development
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_21", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_22" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_22" class="levelNone">
+    <form action="/taxonomy/remove_category/22" id="removecategory22-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/22', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Reporting
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_22", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_23" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_23" class="levelNone">
+    <form action="/taxonomy/remove_category/23" id="removecategory23-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/23', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Design Tools
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_23", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_24" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_24" class="levelNone">
+    <form action="/taxonomy/remove_category/24" id="removecategory24-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/24', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Accounting Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_24", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_25" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_25" class="levelNone">
+    <form action="/taxonomy/remove_category/25" id="removecategory25-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/25', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Administration/Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_25", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_26" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_26" class="levelNone">
+    <form action="/taxonomy/remove_category/26" id="removecategory26-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/26', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Business & Productivity
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_26", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_27" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_27" class="levelNone">
+    <form action="/taxonomy/remove_category/27" id="removecategory27-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/27', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Business and Finance
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_27", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_28" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_28" class="levelNone">
+
+    <form action="/taxonomy/remove_category/28" id="removecategory28-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/28', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Finance/Accounting/Tax
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_28", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_29" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_29" class="levelNone">
+    <form action="/taxonomy/remove_category/29" id="removecategory29-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/29', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    HR Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_29", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_30" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_30" class="levelNone">
+    <form action="/taxonomy/remove_category/30" id="removecategory30-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/30', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Money Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_30", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_31" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_31" class="levelNone">
+    <form action="/taxonomy/remove_category/31" id="removecategory31-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/31', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Project Management
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_31", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_32" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_32" class="levelNone">
+    <form action="/taxonomy/remove_category/32" id="removecategory32-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/32', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Data Analysis and Reporting
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_32", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_33" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_33" class="levelNone">
+    <form action="/taxonomy/remove_category/33" id="removecategory33-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/33', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Mathematics
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_33", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_34" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_34" class="levelNone">
+    <form action="/taxonomy/remove_category/34" id="removecategory34-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/34', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Statistical software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_34", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_35" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_35" class="levelNone">
+
+    <form action="/taxonomy/remove_category/35" id="removecategory35-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/35', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Applications
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_35", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_36" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_36" class="levelNone">
+    <form action="/taxonomy/remove_category/36" id="removecategory36-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/36', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Miscellaneous software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_36", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_37" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_37" class="levelNone">
+    <form action="/taxonomy/remove_category/37" id="removecategory37-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/37', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Science and Engineering
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_37", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_38" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_38" class="levelNone">
+    <form action="/taxonomy/remove_category/38" id="removecategory38-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/38', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    3D Designing/Modeling
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_38", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_39" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_39" class="levelNone">
+    <form action="/taxonomy/remove_category/39" id="removecategory39-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/39', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    3D Multimedia Presentation
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_39", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_40" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_40" class="levelNone">
+    <form action="/taxonomy/remove_category/40" id="removecategory40-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/40', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Audio & Video Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_40", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_41" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_41" class="levelNone">
+    <form action="/taxonomy/remove_category/41" id="removecategory41-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/41', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Desktop Publishing
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_41", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_42" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_42" class="levelNone">
+
+    <form action="/taxonomy/remove_category/42" id="removecategory42-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/42', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Graphics Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_42", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_43" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_43" class="levelNone">
+    <form action="/taxonomy/remove_category/43" id="removecategory43-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/43', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Multimedia & Design
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_43", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+
+    
+    <tr id="unassigned_category_44" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_44" class="levelNone">
+    <form action="/taxonomy/remove_category/44" id="removecategory44-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/44', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Publishing
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_44", {revert:false})
+//]]>
+</script>
+
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_45" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_45" class="levelNone">
+    <form action="/taxonomy/remove_category/45" id="removecategory45-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/45', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Video Editing
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_45", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_46" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_46" class="levelNone">
+    <form action="/taxonomy/remove_category/46" id="removecategory46-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/46', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Surveillance
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_46", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_47" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_47" class="levelNone">
+    <form action="/taxonomy/remove_category/47" id="removecategory47-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/47', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Recognition
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_47", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_48" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_48" class="levelNone">
+    <form action="/taxonomy/remove_category/48" id="removecategory48-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/48', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    acd systems
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_48", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_49" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_49" class="levelNone">
+
+    <form action="/taxonomy/remove_category/49" id="removecategory49-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/49', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Networking (FTP, IP file sharing)
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_49", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_50" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_50" class="levelNone">
+    <form action="/taxonomy/remove_category/50" id="removecategory50-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/50', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Accessibility
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_50", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_51" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_51" class="levelNone">
+    <form action="/taxonomy/remove_category/51" id="removecategory51-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/51', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Add on/Application
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_51", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_52" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_52" class="levelNone">
+    <form action="/taxonomy/remove_category/52" id="removecategory52-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/52', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Add on/Symbols/Plugin
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_52", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_53" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_53" class="levelNone">
+    <form action="/taxonomy/remove_category/53" id="removecategory53-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/53', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Operating Systems
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_53", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_54" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_54" class="levelNone">
+    <form action="/taxonomy/remove_category/54" id="removecategory54-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/54', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Printing
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_54", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_55" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_55" class="levelNone">
+    <form action="/taxonomy/remove_category/55" id="removecategory55-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/55', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Security & Privacy & Spyware
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_55", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_56" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_56" class="levelNone">
+    <form action="/taxonomy/remove_category/56" id="removecategory56-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/56', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Emulation
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_56", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_57" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_57" class="levelNone">
+    <form action="/taxonomy/remove_category/57" id="removecategory57-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/57', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Fonts
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_57", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_58" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_58" class="levelNone">
+    <form action="/taxonomy/remove_category/58" id="removecategory58-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/58', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Mobile
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_58", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_59" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_59" class="levelNone">
+    <form action="/taxonomy/remove_category/59" id="removecategory59-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/59', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Desktop Enhancements
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_59", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_60" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_60" class="levelNone">
+    <form action="/taxonomy/remove_category/60" id="removecategory60-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/60', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Diagnostic
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_60", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_61" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_61" class="levelNone">
+    <form action="/taxonomy/remove_category/61" id="removecategory61-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/61', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Drivers/Firmware
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_61", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_62" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_62" class="levelNone">
+
+    <form action="/taxonomy/remove_category/62" id="removecategory62-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/62', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Anti-Virus, Anti-Spam, Anti-Spyware software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_62", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_63" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_63" class="levelNone">
+    <form action="/taxonomy/remove_category/63" id="removecategory63-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/63', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Apple Hardware
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_63", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_64" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_64" class="levelNone">
+    <form action="/taxonomy/remove_category/64" id="removecategory64-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/64', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Backup, Recovery, Storage
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_64", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_65" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_65" class="levelNone">
+    <form action="/taxonomy/remove_category/65" id="removecategory65-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/65', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Server Utilities
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_65", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_66" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_66" class="levelNone">
+    <form action="/taxonomy/remove_category/66" id="removecategory66-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/66', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Wireless Utilities
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_66", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_67" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_67" class="levelNone">
+    <form action="/taxonomy/remove_category/67" id="removecategory67-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/67', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    E-Commerce
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_67", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_68" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_68" class="levelNone">
+    <form action="/taxonomy/remove_category/68" id="removecategory68-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/68', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Internet
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_68", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_69" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_69" class="levelNone">
+
+    <form action="/taxonomy/remove_category/69" id="removecategory69-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/69', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Web Applications
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_69", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_70" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_70" class="levelNone">
+    <form action="/taxonomy/remove_category/70" id="removecategory70-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/70', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Web Authoring / Publishing Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_70", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_71" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_71" class="levelNone">
+    <form action="/taxonomy/remove_category/71" id="removecategory71-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/71', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Web Software & Development
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_71", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+    <tr id="unassigned_category_72" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_72" class="levelNone">
+    <form action="/taxonomy/remove_category/72" id="removecategory72-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/72', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Utilities
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_72", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_73" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_73" class="levelNone">
+    <form action="/taxonomy/remove_category/73" id="removecategory73-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/73', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Languages (Spoken / Written)
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_73", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_74" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_74" class="levelNone">
+    <form action="/taxonomy/remove_category/74" id="removecategory74-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/74', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Libraries
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_74", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_75" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_75" class="levelNone">
+    <form action="/taxonomy/remove_category/75" id="removecategory75-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/75', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Maps & Travelling
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_75", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_76" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_76" class="levelNone">
+    <form action="/taxonomy/remove_category/76" id="removecategory76-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/76', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Action & Adventure
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_76", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+
+    
+    <tr id="unassigned_category_77" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_77" class="levelNone">
+    <form action="/taxonomy/remove_category/77" id="removecategory77-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/77', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Arcade
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_77", {revert:false})
+//]]>
+</script>
+
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_78" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_78" class="levelNone">
+    <form action="/taxonomy/remove_category/78" id="removecategory78-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/78', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Game/Entertainment
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_78", {revert:false})
+//]]>
+
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_79" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_79" class="levelNone">
+    <form action="/taxonomy/remove_category/79" id="removecategory79-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/79', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Education, Learning and Reference
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_79", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_80" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_80" class="levelNone">
+    <form action="/taxonomy/remove_category/80" id="removecategory80-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/80', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Home & Education
+    <input src="/images/remove.gif?1165522758" type="image" />
+
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_80", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_81" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_81" class="levelNone">
+    <form action="/taxonomy/remove_category/81" id="removecategory81-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/81', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+
+    Training Software
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_81", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_82" class="labelCategory">
+  <td>
+    <div id="div_unassigned_category_82" class="levelNone">
+
+    <form action="/taxonomy/remove_category/82" id="removecategory82-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/82', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Developer / Development Tools
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_82", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_83" class="labelCategory">
+  <td>
+
+    <div id="div_unassigned_category_83" class="levelNone">
+    <form action="/taxonomy/remove_category/83" id="removecategory83-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/83', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Documentation
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_83", {revert:false})
+//]]>
+</script>
+  </td>
+</tr>
+    
+    <tr id="unassigned_category_84" class="labelCategory">
+
+  <td>
+    <div id="div_unassigned_category_84" class="levelNone">
+    <form action="/taxonomy/remove_category/84" id="removecategory84-form" method="post" onsubmit="new Ajax.Request('/taxonomy/remove_category/84', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+    Modeling
+    <input src="/images/remove.gif?1165522758" type="image" />
+    </div>
+    </form> 
+    <script type="text/javascript">
+//<![CDATA[
+new Draggable("div_unassigned_category_84", {revert:false})
+//]]>
+</script>
+  </td>
+
+</tr>
+    
+  </table>
+  </div>
+</td>
+</tr>
+</table>

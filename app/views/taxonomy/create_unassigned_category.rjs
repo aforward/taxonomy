@@ -1,0 +1,3 @@
+page.insert_html :after, 'newunassignedcategory', :partial => 'unassigned_category', :locals => { :category => @category }
+page.visual_effect :highlight, "unassigned_category_#{@category.id}", :duration => 4 
+page.form.reset "unassignedcategory-form"

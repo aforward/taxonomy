@@ -1,0 +1,22 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+mydevtools:
+  id: 11
+  name: Development tools
+  level: 0
+  category_id: 1
+  user_id: 1
+  status: 'unassigned'  
+myplugin:
+  id: 12
+  name: Plugin
+  level: 1
+  category_id: 2
+  user_id: 1
+  status: 'unassigned'      
+mycodesnippets:
+  id: 13
+  name: Code Snippets
+  level: 2
+  category_id: 3
+  user_id: 1
+  status: 'unassigned'  

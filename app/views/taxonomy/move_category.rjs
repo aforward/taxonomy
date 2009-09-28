@@ -1,0 +1,4 @@
+page.remove "category_#{@category.id}"
+page.remove "category_#{@replace_category.id}"
+page.insert_html :before, @insert_before_row_id, :partial => 'category', :locals => { :category => @replace_category, :read_only => false, :modify_latest => @modify_latest }
+page.visual_effect :highlight, "category_#{@category.id}", :duration => 4 

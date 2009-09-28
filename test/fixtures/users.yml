@@ -1,0 +1,14 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+anonymous1:
+  id: 1
+  email: anonymous
+  password: abcd
+james:
+  id: 2
+  email: james@email.ca
+  password: pqrs
+admin:
+  id: 3
+  email: admin@email.ca
+  password: ab12
+  status: admin

@@ -1,0 +1,20 @@
+
+development:
+  database: taxonomy_development
+  adapter: mysql
+  username: root
+  password: 
+  host: localhost
+test:
+  database: taxonomy_test
+  adapter: mysql
+  username: root
+  password: 
+  host: localhost
+production:
+  database: taxonomy_production
+  adapter: mysql
+  username: ralph
+  password: Rati0nal
+  host: localhost
+#  socket: /var/lib/mysql/mysql.sock  

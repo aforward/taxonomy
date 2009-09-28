@@ -1,0 +1,47 @@
+<h1>Evaluating Software Application Taxonomy</h1>
+<div class="instructions">
+<table>
+<tr>
+  <td>
+  <p class="title">Instructions</p>
+  <p>
+  Please evaluate the software application taxonomy below.  You can:
+  <ul>
+  <li>Add new categories (drag onto the taxonomy)</li>
+  <li>Re-arrange existing categories</li>
+  <li>Delete categories</li>
+  </ul>
+  </p>
+  </td>
+  <td>
+  <p>If you are finished, then click <%= link_to 'Completed Taxonomy Research', {:controller => 'welcome', :action => 'complete'}, :method => "post" %>.</p>
+  <p>If you do not want your progress to be included in this study, please <%= link_to 'Withdraw from Research', {:controller => 'welcome', :action => 'withdraw'}, :method => "post" %>.</p>
+  </td>
+</tr>
+</table>
+</div>
+
+<table class="taxonomy">
+<tr><td>
+  <p class="tree">Taxonomy</p>
+  <div class="tree">
+    <% for category in @organized_categories -%>
+      <%= render :partial => 'category', :locals => {:category => category, :read_only => @read_only, :modify_latest => @modify_latest } %>
+    <% end -%>
+    <%= render :partial => 'category', :locals => { :category => PersonalCategory.empty('<< drop new category >>', NULL_LEVEL), :read_only => @read_only, :modify_latest => @modify_latest} unless @read_only  %>
+  </div>
+</td>
+<td>
+  <p class="unsorted">Add New Categories</p>
+  <p class="unsorted">(Then Drag and Drop Into Your Taxonomy)</p>
+  <div class="unsorted">
+  <table id="unassigned_categories" class="unsorted">
+    <%= render :partial => 'new_unassigned_category' %>
+    <% for @category in @unassigned_categories -%>
+    <%= render :partial => 'unassigned_category' %>
+    <% end -%>
+  </table>
+  </div>
+</td>
+</tr>
+</table>

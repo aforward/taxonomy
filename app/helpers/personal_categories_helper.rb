@@ -1,0 +1,2 @@
+module PersonalCategoriesHelper
+end

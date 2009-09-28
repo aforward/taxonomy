@@ -1,0 +1,14 @@
+
+<%= image_tag("uottawa.gif", :alt => "University of Ottawa") %>
+
+<p>
+Thank you for participating in our study.  To help spread the word
+please pass along the link, 
+<a href="<%= HOME_URL %>/taxonomy"><%= HOME_URL %>/taxonomy</a>,  
+to other software practitioners.
+
+</p>
+
+<p>
+If you had not yet completed the taxonomy, then <%= link_to 'Return To Taxonomy', {:action => 'inprogress'}, :method => "post" %>
+</p>

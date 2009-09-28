@@ -1,0 +1,10 @@
+<tr id="newunassignedcategory">
+  <td>
+    <% form_remote_tag(:url => { :action => :create_unassigned_category, :modify_latest => @modify_latest  },
+                        :html => { :id => "unassignedcategory-form" } ) do -%>
+    <div class="levelNone"><%= text_field 'personal_category', 'name', {:class => 'category'}  %>
+    <%= image_submit_tag '/images/add.gif', {:class => 'add', :autocomplete => 'no'} %>
+    </div>
+    <% end -%> 
+  </td>
+</tr>

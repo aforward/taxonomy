@@ -1,0 +1,28 @@
+<h1>Building a Software Application Taxonomy</h1>
+<div class="instructions">
+<h2><a href="http://www.youtube.com/watch?v=iqlnWIFZ5BM" target="_new">Why Help? (Video from Consent Page)</a></h2>
+<h2><a href="http://www.youtube.com/watch?v=Ut2O8xzeIMI" target="_new">Instructions (Video)</a></h2>
+</div>
+<% form_tag :action => 'signin' do %>
+  <p><label for="user_email">Enter your email (leave blank to remain anonymous), then click "Begin"</label></p>
+  <p><%= text_field 'user', 'email'  %></p>
+
+  <p>To understand the different backgrounds of people answering this survey:</p>
+  <p>How many years of experience do you have developing software?</p>
+  <p><%= text_field 'user', 'years_experience'%></p>
+  
+  <p>What is the highest level of education you have obtained?</p>
+  <p>
+    <li class="no-list"><%= radio_button 'user', 'education', 'High school' %><label for="user_education_high_school">High school</label></li>
+    <li class="no-list"><%= radio_button 'user', 'education', 'Community college' %><label for="user_education_community_college">Community college</label></li>
+    <li class="no-list"><%= radio_button 'user', 'education', 'Some university' %><label for="user_education_some_university">Some university, but never graduated</label></li>
+    <li class="no-list"><%= radio_button 'user', 'education', 'Bachelors degree' %><label for="user_education_bachelors_degree">Bachelors degree</label></li>
+    <li class="no-list"><%= radio_button 'user', 'education', 'Masters degree' %><label for="user_education_masters_degree">Masters degree</label></li>
+    <li class="no-list"><%= radio_button 'user', 'education', 'PhD' %><label for="user_education_phd">PhD</label></li>
+  </p>
+  
+  <p>What country do you live in?</p>
+  <p><%= text_field 'user', 'country'%></p>
+
+  <p><%= submit_tag "Begin" %></p>
+<% end %>

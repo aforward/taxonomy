@@ -1,0 +1,8 @@
+<h1>Available Software Taxonomies</h1>
+<% @all_users.each do |user| %>
+  <div>
+  <%= link_to "#{user.email}(#{user.id})", {:action => 'build', :lookup => user.id} %>, <%= user.status%>
+  <%= link_to 'publish', {:controller => 'taxonomy', :action => 'publish', :lookup => user.id}, :method => "post" %>
+  <%= link_to 'assign latest', {:controller => 'taxonomy', :action => 'assign', :lookup => user.id}, :method => "post" %>  
+  </div>
+<% end -%>

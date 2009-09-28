@@ -1,0 +1,3 @@
+page.replace "category_#{@category.id}", :partial => 'category', :locals => { :category => @category, :read_only => false, :modify_latest => @modify_latest }
+page.visual_effect :highlight, "category_#{@category.id}", :duration => 4 
+page.form.reset "newcategory#{@parent_id}-form"

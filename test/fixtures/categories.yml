@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+devtools:
+  id: 1
+  name: Development tools
+  level: 0
+  status: unassigned
+plugin:
+  id: 2
+  name: Plugin
+  level: 1
+  parent_id: 1
+  status: unassigned
+codesnippets:
+  id: 3
+  name: Code Snippets
+  level: 2
+  parent_id: 2
+  status: unassigned

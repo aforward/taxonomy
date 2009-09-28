@@ -1,0 +1,29 @@
+<div id="displaycategory<%= category.id %>">
+  <div id="category_<%= category.id %>" class="category-entry">
+    <span class="level<%= category.level %>">
+    <% unless category.new_record? -%>
+      <% form_remote_tag(:url => { :action => :remove_category, :id => category.id  },
+                          :html => { :id => "removecategory#{category.id}-form" } ) do -%>
+      <%= category.prefix %>: <%= category.name %>
+      <%= image_submit_tag '/images/remove.gif', {:class => 'remove'} unless read_only %>
+      <% end -%>
+    <% else -%>
+      <%= category.name %>
+    <% end -%>
+    </span>
+    <% for subcategory in category.children -%>
+      <%= render :partial => 'category', :locals => { :category => subcategory, :read_only => read_only, :modify_latest => modify_latest } %>
+    <% end -%>
+    <%= render :partial => 'new_category', :locals => { :level => category.level + 1, :parent_id => category.id, :modify_latest => modify_latest } unless read_only %>
+    
+    <% unless read_only -%>
+      <%= drop_receiving_element("category_#{category.id}", 
+            :before => "newcategory#{category.parent_id}", :url => { :action => "assign_category", :parent_id => category.id, :modify_latest => modify_latest },
+            :accept => ["levelNone"], :hoverclass => "category-active#{category.level}") if category.level < LAST_LEVEL %>  
+      <%= drop_receiving_element("category_#{category.id}", 
+            :before => "newcategory#{category.parent_id}", :url => { :action => "assign_category", :parent_id => category.id, :modify_latest => modify_latest },
+            :accept => ["category-entry"], :hoverclass => "category-active#{category.level}") if category.level < LAST_LEVEL and !category.new_record? %>  
+      <%= draggable_element "category_#{category.id}", :revert => false unless category.new_record? %>
+    <% end -%>
+  </div>
+</div>

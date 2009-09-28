@@ -1,0 +1,5 @@
+page.insert_html :before, @insert_before_row_id, :partial => 'category', :locals => { :category => @category, :read_only => false, :modify_latest => @modify_latest }
+page.form.reset "newcategory#{@category.parent_id}-form" 
+page.visual_effect :highlight, "category_#{@category.id}", :duration => 4
+page.visual_effect :highlight, "unassigned_category_#{@category.id}", :duration => 4
+page.remove "unassigned_category_#{@category.id}"

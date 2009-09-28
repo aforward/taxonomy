@@ -1,0 +1,13 @@
+<% if level <= LAST_LEVEL -%>
+<div id="newcategory<%= parent_id %>" class="category-entry">
+  <% form_remote_tag(:url => { :action => :create_category, :parent_id => parent_id  },
+                    :html => { :id => "newcategory#{parent_id}-form" } ) do -%>
+    <% unless modify_latest -%>
+      <span class="level<%= level %>_input">
+      <%= text_field 'personal_category', 'name', {:class => 'category', :autocomplete => 'no'}  %>
+      <%= image_submit_tag '/images/add.gif', {:class => 'add'} %>
+      </span>
+    <%end -%>
+  <%end -%>
+</div>
+<% end -%>

@@ -1,0 +1,11 @@
+<h1>Latest Software Taxonomy</h1>
+<table class="taxonomy">
+<tr><td>
+  <div class="tree">
+    <% for category in @latest_categories -%>
+      <%= render :partial => 'category', :locals => {:category => category, :read_only => true} %>
+    <% end -%>
+  </div>
+</td>
+</tr>
+</table>
